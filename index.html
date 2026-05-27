@@ -2488,12 +2488,11 @@
   /* =========================================================
      ★★★ 部署配置(开发者填写)★★★
      ========================================================= */
-  const SUPABASE_URL      = 'https://pwteiotuoaervjhdsoev.supabase.co/rest/v1/
-';   // ← 你的 Supabase 项目 URL,如 https://xxxx.supabase.co
-  const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB3dGVpb3R1b2FlcnZqaGRzb2V2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk4NDkyOTcsImV4cCI6MjA5NTQyNTI5N30.oaem1WIe3fcnE6mvMVQQbsL2huAzIaHWZRh7TyDu91I';   // ← 你的 anon public key(可公开)
-  const WORKER_URL        = 'silent-mouse-d4b3.starkniu521.workers.dev';   // ← 安全版 Worker 地址(如 https://xxx.workers.dev);填了则生成走服务端鉴权+扣额度
-  const QWEN_PROXY_URL    = '';   // ← (测试用)未启用 Worker 时的简单代理;Key 在 Worker 时不用填
-  const FREE_CREDITS      = 10;   // 仅用于文案展示;实际默认额度在数据库 SQL 里设置
+  const SUPABASE_URL      = 'https://pwteiotuoaervjhdsoev.supabase.co';
+  const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB3dGVpb3R1b2FlcnZqaGRzb2V2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk4NDkyOTcsImV4cCI6MjA5NTQyNTI5N30.oaem1WIe3fcnE6mvMVQQbsL2huAzIaHWZRh7TyDu91I';
+  const WORKER_URL        = 'https://silent-mouse-d4b3.starkniu521.workers.dev';
+  const QWEN_PROXY_URL    = '';
+  const FREE_CREDITS      = 10;
   // 套餐(手动收款版,价格仅用于前端展示;真实开通由你在 Supabase 后台手动操作)
   const PRODUCTS = {
     pro_30d: { name: 'PRO 月套餐', priceText: '¥20 / 月', amount: 20, days: 30 },
